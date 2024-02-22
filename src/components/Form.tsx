@@ -30,11 +30,16 @@ const Form = () => {
             setErrors(validateErrors)
         }
 
-        setName("")
-        setEmail("")
-        setAgree(false)
 
-        alert("Obrigado por se inscrever");
+        if (Object.keys(validateErrors).length == 0) {
+            setErrors(validateErrors)
+            setName("")
+            setEmail("")
+            setAgree(false)
+
+            alert("Obrigado por se inscrever");
+        }
+
     }
 
     return (

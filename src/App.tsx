@@ -4,7 +4,7 @@ function App() {
     return(
         <div className="bg-slate-900 min-h-screen w-full flex flex-col items-center justify-center">
             <h1 className="font-bold text-[2rem] text-white">Inscreva-se</h1>
-            <p className="text-white">Assine nossa lewsletter e matenha-se informado</p>
+            <p className="text-white">Assine nossa Newsletter e matenha-se informado</p>
             <div className="w-96 mt-4 bg-stone-200 px-4 py-5 rounded-lg">
                 <Form />   
             </div>
