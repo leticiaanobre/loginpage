@@ -2,6 +2,8 @@ import {useState, FormEvent} from "react";
 import {User} from "../types/User";
 import {validate} from "../utils/validate";
 
+import { ButtonComponent } from "./button";
+
 const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -83,9 +85,13 @@ const Form = () => {
                     <small className="text-xs text-red-500 mt-1">{errors?.agree}</small>
                 )}
             </div>
-            <button 
-            type="submit" 
-            className="bg-slate-600 hover:bg-slate-500 font-medium text-sm py-2 px-4 rounded-lg text-white">Cadastrar</button>
+            <div className="flex justify-center">
+            <ButtonComponent
+                type="submit"
+                className="bg-slate-600 hover:bg-slate-500 font-medium text-sm py-2 px-4 rounded-lg text-white"
+                children="Cadastrar"
+            />
+            </div>
         </form>
     )
 }
